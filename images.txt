@@ -19,7 +19,9 @@ calico/pod2daemon-flexvol:v3.23.5
 calico/node:v3.23.5
 calico/kube-controllers:v3.23.5
 photoprism/photoprism:latest
+#KubeSphere
 kubesphere/ks-installer:v3.4.1
+mirrorgooglecontainers/defaultbackend-amd64:1.4
 #支持私库
 k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
 xhofe/alist:latest
