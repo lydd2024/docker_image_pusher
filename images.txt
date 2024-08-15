@@ -34,6 +34,7 @@ kubesphere/kubectl:v1.22.0
 kubesphere/prometheus-config-reloader:v0.55.1
 kubesphere/notification-manager-operator:v2.3.0
 prom/alertmanager:v0.23.0
+kubesphere/notification-tenant-sidecar:v3.2.0
 
 #支持私库
 #k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
