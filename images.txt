@@ -37,7 +37,7 @@ prom/alertmanager:v0.23.0
 kubesphere/notification-tenant-sidecar:v3.2.0
 kubesphere/notification-manager:v2.3.0
 kubesphere/pause:3.9
-
+kubesphere/ks-extensions-museum:latest
 
 redis:5.0
 redis:7.0
