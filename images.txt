@@ -42,6 +42,7 @@ kubesphere/ks-extensions-museum:latest
 kubesphere/ks-apiserver:v4.1.2
 kubesphere/ks-console:v4.1.2
 kubesphere/ks-controller-manager:v4.1.2
+kubesphere/kubectl:v1.27.16
 
 redis:5.0
 redis:7.0
