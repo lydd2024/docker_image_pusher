@@ -55,7 +55,7 @@ nacos/nacos-server:latest
 
 homeassistant/home-assistant:latest
 frdel/agent-zero-run
-minio/minio:RELEASE.2025-04-22T22-12-26Z
+minio/minio:RELEASE.2025-04-22T22-12-26Z --platform=linux/arm64
 
 #支持私库
 #k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
