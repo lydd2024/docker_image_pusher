@@ -1,6 +1,7 @@
 dgtlmoon/changedetection.io
 gitlab/gitlab-ce
 wantcat/trendradar
+bitnamilegacy/elasticsearch:8.18.0
 
 
 #支持私库
