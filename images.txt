@@ -10,6 +10,7 @@ milvusdb/milvus:v2.5.10
 nsqio/nsq:v1.2.1
 cozedev/coze-studio-server:latest
 cozedev/coze-studio-web:latest
+dxflrs/garage:latest
 
 #支持私库
 #k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
