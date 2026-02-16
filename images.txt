@@ -1,5 +1,5 @@
 
-bellsoft/liberica-runtime-container:jre-17-slim
+bellsoft/liberica-runtime-container:jdk-17-slim
 
 
 #支持私库
