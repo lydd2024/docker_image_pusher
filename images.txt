@@ -1,5 +1,5 @@
 
---platform linux/amd64 eclipse-temurin:17-jre
+--platform=linux/amd64 eclipse-temurin:17-jre
 
 
 #支持私库
