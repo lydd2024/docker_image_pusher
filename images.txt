@@ -1,5 +1,5 @@
 
---platform=linux/amd64 eclipse-temurin:17-jre
+bellsoft/liberica-runtime-container:jre-17-slim
 
 
 #支持私库
