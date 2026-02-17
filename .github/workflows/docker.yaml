@@ -116,13 +116,21 @@ jobs:
             if [[ "$line" == *"temurin"* ]] || [[ "$line" == *"openjdk"* ]] || [[ "$line" == *"corretto"* ]] || [[ "$line" == *"liberica"* ]]; then
                 echo "检测到Java运行时镜像，执行单架构转换..."
             
-                docker buildx build \
+                #docker buildx build \
+                #  --platform linux/amd64 \
+                #  -t local-single-arch:temp \
+                #  --load \
+                #  - <<EOF
+
+
+                echo "FROM $line" | docker buildx build \
                   --platform linux/amd64 \
                   -t local-single-arch:temp \
                   --load \
-                  - <<EOF
-            FROM $line
-            EOF
+                  -
+
+            #FROM $line
+            #EOF
             
                 image="local-single-arch:temp"
             else
