@@ -106,8 +106,30 @@ jobs:
                 continue
             fi
         
-            echo "docker pull $line"
-            docker pull $line
+            #echo "docker pull $line"
+            #docker pull $line
+
+            echo "docker pull --platform=linux/amd64 $line"
+            docker pull --platform=linux/amd64 $line
+            
+            # 判断是否是Java运行时镜像（multi-arch）
+            if [[ "$line" == *"temurin"* ]] || [[ "$line" == *"openjdk"* ]] || [[ "$line" == *"corretto"* ]] || [[ "$line" == *"liberica"* ]]; then
+                echo "检测到Java运行时镜像，执行单架构转换..."
+            
+                docker buildx build \
+                  --platform linux/amd64 \
+                  -t local-single-arch:temp \
+                  --load \
+                  - <<EOF
+            FROM $line
+            EOF
+            
+                image="local-single-arch:temp"
+            else
+                image=$(echo "$line" | awk '{print $NF}')
+            fi
+
+            
             platform=$(echo "$line" | awk -F'--platform[ =]' '{if (NF>1) print $2}' | awk '{print $1}')
             echo "platform is $platform"
             # 如果存在架构信息 将架构信息拼到镜像名称前面
