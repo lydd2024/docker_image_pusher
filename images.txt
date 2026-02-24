@@ -4,6 +4,7 @@
 #maven:3.9-eclipse-temurin-17
 #nginx:alpine
 node:20-alpine
+rustdesk-server:1.4.5
 
 #支持私库
 #k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
