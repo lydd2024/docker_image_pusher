@@ -3,7 +3,6 @@
 #eclipse-temurin:17-jre
 #maven:3.9-eclipse-temurin-17
 #nginx:alpine
-node:20-alpine
 rustdesk-server:1.4.5
 
 #支持私库
