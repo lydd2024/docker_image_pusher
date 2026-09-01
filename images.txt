@@ -4,7 +4,7 @@
 #maven:3.9-eclipse-temurin-17
 #nginx:alpine
 rustdesk/rustdesk-server:1.1.15
-vllm/vllm-openai:nightly-44fe2a392b71d52a8d72faf2f8278834379482c9
+vllm/vllm-openai:nightly-5a4c8d99242e9e069b604d0e9b969e77f7dd501d
 
 #支持私库
 #k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
